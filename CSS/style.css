@@ -94,6 +94,11 @@ body::-webkit-scrollbar-thumb {
   color: #092627;
   text-shadow: none;
 }
+
+.multi-page-nav .logo span{
+  color: #092627;
+  text-shadow: none
+}
 /* End of Logo */
 
 /* Nav Items */
@@ -144,6 +149,20 @@ body::-webkit-scrollbar-thumb {
   text-shadow: none;
 }
 
+.multi-page-nav .nav-link {
+  color: #092627;
+  text-shadow: none;
+}
+/* End of Nav Items */
+
+/* Dropdown 2 */
+.dropdown {
+  position: absolute;
+  top: 4.9rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
 /* Dropdown 1 */
 .dropdown {
   position: absolute;
@@ -165,6 +184,10 @@ body::-webkit-scrollbar-thumb {
 .sticky .dropdown {
   top: 8rem;
   box-shadow: 0 1rem 10rem rgba(130, 162, 235, 0.4);
+}
+
+.multi-page-nav .nav-items .dropdown {
+  box-shadow: 0 1rem 10rem rgba(130, 162, 225, 0.4);
 }
 
 .dropdown-1 {
@@ -609,6 +632,12 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to right, #ff45b9, #ff3598);
   box-shadow: none;
   color: #fff;
+}
+
+.multi-page-nav .nav-item .nav-btn{
+  background: linear-gradient(to right, #ff45b9, #ff3598);
+  color: #fff;
+  box-shadow: none;
 }
 /* End of Nav Items  */
 
