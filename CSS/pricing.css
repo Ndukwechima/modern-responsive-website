@@ -211,3 +211,50 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to right, #ca6eff, #7118d6 90%);
 }
 /* End of Pricing */
+
+/* Start of Responsiveness */
+@media (max-width: 1600px) {
+    .pricing-small-circle{
+        right: 10%;
+    }
+
+      .pricing-large-circle{
+        right: 10%;
+        bottom: 12%;
+    }
+}
+
+@media(max-width: 1440px){
+   .pricing-small-circle{
+        right: 7%;
+    }
+}
+
+
+@media(max-width: 1024px){
+   .pricing-card{
+        width: 40rem;
+    }
+
+    .pricing-rectangle{
+      top: 28%;
+      left: 5%;
+      width: 40rem;
+      height: 40rem;
+    }
+
+     .pricing-large-circle{
+      bottom: 10%;
+      right: 5%;
+      width: 30rem;
+      height: 30rem;
+    }
+
+      .pricing-small-circle{
+      top: 25%;
+      right: 5%;
+      width: 6rem;
+      height: 6rem;
+    }
+}
+/* End of Responsiveness */

@@ -1,13 +1,47 @@
 // Start of Navbar
 
 const navbar = document.querySelector(".navbar");
+const menuIcon = document.querySelector(".menu-icon");
+const navItems = document.querySelector(".nav-item");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    navbar.classList.add("sticky");
-  } else {
+
+  if (window.innerWidth <= 820 && navbar.classList.contains("hamburger")) {
     navbar.classList.remove("sticky");
+  }else{
+      navbar.classList.toggle("sticky", window.scrollY > 0);
   }
+
+  if (window.scrollY > 0) {
+    menuIcon.classList.add("position");
+  }else{
+    menuIcon.classList.remove("position")
+  }
+
+  if (navbar.classList.contains("hamburger")) {
+    menuIcon.classList.remove("position");
+  }
+})
+
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle("hamburger");
+})
+
+// Loop the navItems
+navItems.forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+
+    if (navItem.classList.contains("show")) {
+      navItem.classList.remove("show");
+      
+    }else{
+      navItems.forEach((item) => {
+        item.classList.remove("show");
+      })
+
+      item.classList.add("show");
+    }
+  })
 })
 
 // End of Navbar
