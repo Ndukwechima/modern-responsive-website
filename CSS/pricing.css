@@ -213,6 +213,7 @@ body::-webkit-scrollbar-thumb {
 /* End of Pricing */
 
 /* Start of Responsiveness */
+
 @media (max-width: 1600px) {
     .pricing-small-circle{
         right: 10%;
@@ -229,7 +230,6 @@ body::-webkit-scrollbar-thumb {
         right: 7%;
     }
 }
-
 
 @media(max-width: 1024px){
    .pricing-card{
@@ -257,4 +257,103 @@ body::-webkit-scrollbar-thumb {
       height: 6rem;
     }
 }
+
+
+@media(max-width: 820px){
+ .pricing{
+  height: 120vh;
+ }
+
+ .pricing-rectangle{
+  left: -3%;
+  top: 25%;
+ }
+
+ .pricing-small-circle{
+  width: 6rem;
+  height: 6rem;
+  top: 25%;
+  right: 3%;
+ }
+
+  .pricing-large-circle{
+  width: 40rem;
+  height: 40rem;
+  bottom: 25%;
+  right: -5%;
+ }
+
+ .pricing-header{
+  width: 80rem;
+ }
+
+ .pricing-cards{
+   perspective: none;
+ }
+
+ .pricing-card-right{
+  transform: translateZ(0);
+ }
+}
+
+@media(max-width: 768px){
+  .pricing-rectangle{
+    top: 30%;
+    left: -6%;
+  }
+
+   .pricing-small-circle{
+    top: 28%;
+  }
+
+  .pricing-large-circle{
+    bottom: 12%;
+  }
+}
+
+@media(max-width: 430px){
+  .pricing{
+    height: 180vh;
+  }
+
+  .pricing-header h1{
+    font-size: 4rem;
+    width: 50rem;
+    margin: auto;
+  }
+
+    .pricing-header h3{
+    font-size: 2rem;
+    width: 50rem;
+    margin: 2rem auto;
+  }
+
+  .pricing-rectangle{
+    top: 20%;
+  }
+
+  .pricing-small-circle{
+    top: 17%;
+    right: 5%;
+  }
+
+  .pricing-large-circle{
+    bottom: 8%;
+  }
+
+  .pricing-cards{
+    flex-direction: column;
+  }
+
+  .pricing-card{
+    margin: 0 1.5rem 10rem 1.5rem;
+  }
+}
+
+@media (max-width: 375px){
+  .pricing{
+    height: 250vh;
+  }
+}
+
 /* End of Responsiveness */
