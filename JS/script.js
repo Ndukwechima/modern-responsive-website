@@ -39,8 +39,7 @@ menuIcon.addEventListener("click", () => {
 
 // Loop the navItems
 navItems.forEach((navItem) => {
-  navItem.addEventListener("click", (e) => {
-    e.preventDefault();
+  navItem.addEventListener("click", () => {
     if (navItem.classList.contains("show")) {
       navItem.classList.remove("show");
 
